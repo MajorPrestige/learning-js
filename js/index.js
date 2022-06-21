@@ -163,3 +163,13 @@
 // console.log(clients.slice(2, 4));
 // console.log(clients.splice(0, 3));
 // console.log(clients);
+
+// const totalMinutes = Number.parseInt(prompt("Введіть кількість хвилин."));
+// const restMinutes = totalMinutes % 60;
+// const hours = Number.parseInt(totalMinutes / 60);
+
+// if (restMinutes === 0) {
+// 	console.log(`Зараз рівно ${hours} години`);
+// } else {
+// 	console.log(`Зараз ${hours} години, ${restMinutes} хвилин(а).`);
+// }
