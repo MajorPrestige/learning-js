@@ -173,3 +173,49 @@
 // } else {
 // 	console.log(`Зараз ${hours} години, ${restMinutes} хвилин(а).`);
 // }
+// const genres = ["Jazz", "Blues"];
+// genres.concat("Rock");
+
+// console.log(genres[0]);
+// console.log(genres[genres.length - 1]);
+
+// console.log(genres.shift());
+
+// genres.unshift("Country", "Regy");
+// console.table(genres);
+
+// const arr1 = [1, 2, 3];
+// const arr2 = arr1;
+
+// console.log(arr1);
+// console.log(arr2);
+
+// arr1.push(4);
+
+// console.log(arr1);
+// console.log(arr2);
+
+// const names = "Jacob,William";
+// const phones = "983913,32913919";
+
+// const namesArr = names.split(",");
+// const phonesArr = phones.split(",");
+
+// console.log(`${namesArr[0]} : ${phonesArr[
+
+// const userLog = prompt("Вкажіть ваш логін");
+// const userAdmin = "admin";
+// const userAdminNormilized = userAdmin.toLowerCase();
+// console.log(userLog);
+// if (!userLog) {
+// 	console.log("Cancelled");
+// } else if (userLog.toLowerCase() !== userAdminNormilized) {
+// 	console.log("I don`t know you");
+// } else {
+// 	const userPass = prompt("Вкажіть ваш пароль");
+// 	if (userPass === "I am the boss") {
+// 		console.log("Hello!");
+// 	} else {
+// 		console.log("Wrong password");
+// 	}
+// }
