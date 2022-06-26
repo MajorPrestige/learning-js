@@ -1,3 +1,5 @@
+"use strict";
+
 // function checkForSpam(message) {
 // 	let result;
 // 	const messageNormilized = message.toLowerCase();
@@ -204,8 +206,10 @@
 // console.log(`${namesArr[0]} : ${phonesArr[
 
 // const userLog = prompt("Вкажіть ваш логін");
+
 // const userAdmin = "admin";
 // const userAdminNormilized = userAdmin.toLowerCase();
+
 // console.log(userLog);
 // if (!userLog) {
 // 	console.log("Cancelled");
@@ -219,3 +223,241 @@
 // 		console.log("Wrong password");
 // 	}
 // }
+
+// function getExtremeElements(array) {
+// 	// Change code below this line
+// 	const firstElementArray = array[0];
+// 	const lastElementArray = array[array.length - 1];
+// 	const lastAndFirstElementArray = firstElementArray.concat(lastElementArray);
+
+// 	return lastAndFirstElementArray;
+// 	// Change code above this line
+// }
+
+// getExtremeElements([1, 2, 3, 4, 5]);
+
+// const array = [1, 2, 3, 4, 5];
+// const firstElementArray = array[0];
+// const lastElementArray = array[array.length - 1];
+
+// console.log(firstElementArray);
+// console.log(lastElementArray);
+// // console.log(firstElementArray.concat(lastElementArray));
+
+// function calculateEngravingPrice(message, pricePerWord) {
+// 	// Change code below this line
+// 	const totalPrice = message.splt(" ");
+
+// 	// Change code above this line
+// }
+
+// calculateEngravingPrice("JavaScript is in my blood", 10);
+
+// function findLongestWord(string) {
+// 	// Change code below this line
+// 	const stringArr = string.split(" ");
+// 	let result = stringArr[0];
+// 	// console.log(stringArr);
+// 	for (let i = 0; i < stringArr.length; i += 1) {
+// 		// console.log(result);
+// 		if (result.length < stringArr[i].length) {
+// 			result = stringArr[i];
+// 		}
+// 	}
+// 	return result;
+// 	// Change code above this line
+// }
+
+// findLongestWord("The quick brown fox jumped over the lazy dog");
+
+// function createArrayOfNumbers(min, max) {
+// 	const numbers = [];
+// 	// Change code below this line
+// 	for (let i = min; i <= max; i += 1) {
+// 		console.log(i);
+// 		numbers.push(i);
+// 	}
+// 	// Change code above this line
+// 	return numbers;
+// }
+
+// createArrayOfNumbers(1, 3);
+
+// function filterArray(numbers, value) {
+// 	let newArray = [];
+// 	for (let i = 0; i < numbers.length; i += 1) {
+// 		if (numbers[i] > value) {
+// 			newArray.push(numbers[i]);
+// 		}
+// 	}
+// 	return newArray;
+// }
+
+// filterArray([1, 2, 3, 4, 5], 4);
+// // возвращает [5]
+
+// function getCommonElements(array1, array2) {
+// 	let newArray = [];
+
+// 	for (let i = 0; i < array1.length; i += 1) {
+// 		if (array2.includes(array1[i])) {
+// 			newArray.push(array1[i]);
+// 		}
+// 	}
+// 	return newArray;
+// }
+
+// getCommonElements([1, 2, 3], [2, 4]);
+// //  возвращает [2]
+
+// getEvenNumbers(3, 11);
+
+// // * Напиши функцию includes(array, value), которая делает тоже самое, что и метод массива массив.includes(значение) - проверяет, есть ли в массиве array значение value, возвращая true если есть и false в противном случае.
+
+// // * При выполнении этой задачи в теле функции includes() нельзя использовать метод массив.includes(значение).
+
+// function includes(array, value) {
+// 	for (const arr of array) {
+// 		if (arr % value === 0) {
+// 			console.log(true);
+// 		}
+// 		console.log(false);
+// 	}
+// }
+
+// includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter");
+// // возвращает true
+
+// function capitalize(string) {
+// 	const gluedString = string.split(" ").join(" ");
+
+// 	const gluedStringCapitalize = gluedString.charAt(0).toUpperCase() + gluedString.slice(1, gluedString.length);
+
+// 	const stringCapitalize = gluedStringCapitalize.split(" ").join(" ");
+
+// 	console.log(stringCapitalize);
+// }
+
+// capitalize("java-script in my blood");
+
+// function capitalize(string) {
+// 	const stringCapitalize = string.charAt(0).toUpperCase() + string.slice(1, string.length);
+// 	console.log(stringCapitalize);
+// }
+
+// function capitalize(string) {}
+
+// capitalize("java-script in my blood");
+
+// const titleLow = "title";
+
+// console.log(titleLow);
+
+// const apartment = {
+// 	descr: "Spacious apartment in the city center",
+// 	rating: 4,
+// 	price: 2153,
+// };
+
+// for (const appKeys in apartment) {
+// 	const key = [];
+// 	console.table(key);
+// }
+
+// for (const appKeys in apartment) {
+// }
+
+// const apartment = {
+// 	descr: "Spacious apartment in the city center",
+// 	rating: 4,
+// 	price: 2153,
+// };
+
+// for (const apKeys in apartment) {
+// 	const keys = [].push(apKeys);
+// 	console.log(keys);
+// }
+
+// Change code below this line
+
+// function countProps(object) {
+// 	let propCount = 0;
+// 	// Change code below this line
+// 	const objectArr = [];
+
+// 	for (const keys in object) {
+// 		if (object.hasOwnProperty(keys)) {
+// 			objectArr.push(keys);
+// 			propCount = objectArr.length;
+// 		}
+// 	}
+// 	// Change code above this line
+// 	console.log(propCount);
+// 	return propCount;
+// }
+
+// countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }); //3
+
+// const apartment = {
+// 	descr: "Spacious apartment in the city center",
+// 	rating: 4,
+// 	price: 2153,
+// };
+// const values = [];
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// for (const key of keys) {
+// 	values.push(apartment[key]);
+// 	console.log(values);
+// }
+// console.log(values);
+// console.log(keys);
+
+// function countProps(object) {
+// 	// Change code below this line
+// 	let propCount = 0;
+
+// 	const keyInObject = Object.keys(object);
+// 	console.log(keyInObject.length);
+
+// 	return (propCount += keyInObject.length);
+// }
+
+// countProps({ mail: "poly@mail.com", isOnline: true, score: 500 });
+
+// возвращает 3
+
+// const products = [
+// 	{ name: "Radar", price: 1300, quantity: 4 },
+// 	{ name: "Scanner", price: 2700, quantity: 3 },
+// 	{ name: "Droid", price: 400, quantity: 7 },
+// 	{ name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+// 	// Change code below this line
+// 	let productPrise = 0;
+// 	for (const key of products) {
+// 		// console.log(key);
+// 		if (key.name === productName) {
+// 			productPrise = key.price;
+// 			break;
+// 			// console.log(productPrise);
+// 		}
+// 	}
+// 	console.log(productPrise);
+// 	return productPrise;
+// 	// Change code above this line
+// }
+
+const products = [
+	{ name: "Radar", price: 1300, quantity: 4 },
+	{ name: "Scanner", price: 2700, quantity: 3 },
+	{ name: "Droid", price: 400, quantity: 7 },
+	{ name: "Grip", price: 1200, quantity: 9 },
+];
+
+function calculateTotalPrice(productName) {
+	// Пиши код ниже этой строки
+	// Пиши код выше этой строки
+}
